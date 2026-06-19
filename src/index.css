@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface-2: #1a1a26;
+  --border: #22223a;
+  --accent: #e63946;
+  --accent-dim: rgba(230, 57, 70, 0.12);
+  --accent-dark: #c1121f;
+  --gold: #ffd60a;
+  --gold-dim: rgba(255, 214, 10, 0.12);
+  --text: #f0f0f8;
+  --text-muted: #8888aa;
+  --text-dim: #44445a;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --nav-h: 64px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+a { text-decoration: none; color: inherit; }
+img { display: block; }
