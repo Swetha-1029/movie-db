@@ -1,0 +1,58 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.skeleton {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+}
+
+.skeletonPoster {
+  aspect-ratio: 2/3;
+  background: linear-gradient(90deg, var(--surface) 25%, var(--surface-2) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeletonInfo { padding: 12px; }
+
+.skeletonLine {
+  height: 12px;
+  background: var(--surface-2);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  animation: shimmer 1.4s infinite;
+  background-size: 200% 100%;
+}
+
+.skeletonLineShort {
+  height: 10px;
+  width: 50%;
+  background: var(--surface-2);
+  border-radius: 4px;
+  animation: shimmer 1.4s infinite;
+  background-size: 200% 100%;
+}
+
+.empty {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 24px;
+  color: var(--text-dim);
+  font-size: 15px;
+}
+
+.empty span { font-size: 48px; }
