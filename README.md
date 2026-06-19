@@ -1,9 +1,10 @@
 # Movie Database (React Router)
 
-**Intern ID:** [YOUR INTERN ID]
-**Full Name:** [YOUR FULL NAME]
-**No. of Weeks:** [NUMBER OF WEEKS]
-**Project Name:** Movie Database (React Router)
+- **Intern ID:** CITS3094
+- **Full Name:** Swetha C
+- **No. of Weeks:** 4 weeks
+- **Project Name:** Movie Database (React Router)
+- **Domain Name:** React.js web development
 
 ---
 
@@ -32,49 +33,6 @@ A full-featured movie database web application built with React.js and React Rou
 - CSS Modules
 - OMDb API (free)
 
-## Getting Started
-
-### 1. Get a free OMDb API key
-- Go to [https://www.omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx)
-- Select the FREE tier and enter your email
-- Check your inbox for the key, and click the activation link in the email
-
-### 2. Set up environment variable
-Create a `.env` file in the root folder:
-```
-VITE_OMDB_API_KEY=your_api_key_here
-```
-
-### 3. Run the app
-```bash
-npm install
-npm run dev
-```
-
-Opens at http://localhost:5173
-
-## Project Structure
-
-```
-src/
-├── context/
-│   └── WatchlistContext.jsx   ← global watchlist state (Context API)
-├── hooks/
-│   └── useMovies.js           ← all OMDb API calls (custom hooks)
-├── components/
-│   ├── Navbar.jsx             ← sticky nav with search + watchlist count
-│   ├── MovieCard.jsx          ← movie poster card with watchlist toggle
-│   └── MovieGrid.jsx          ← responsive grid with skeleton loaders
-├── pages/
-│   ├── Home.jsx               ← hero banner + featured movies grid
-│   ├── Search.jsx             ← search results with pagination
-│   ├── MovieDetail.jsx        ← full movie info + cast + awards
-│   ├── Genres.jsx             ← browse by genre
-│   └── Watchlist.jsx          ← saved movies list
-├── App.jsx                    ← React Router routes
-├── main.jsx                   ← Vite entry point
-└── index.css                  ← global styles + CSS variables
-```
 
 ## Pages & Routes
 
